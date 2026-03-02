@@ -42,3 +42,11 @@
 10) run overlay (jupyter notebook)
 11) program device (vivado)
 12) continue with jupyter notebook
+
+If errors with running Arduino:
+```
+cd Downloads
+echo 'KERNEL=="ttyACM*", MODE="0666"' | sudo tee /etc/udev/rules.d/99-arduino.rules
+echo 'KERNEL=="ttyUSB*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/99-arduino.rules
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
