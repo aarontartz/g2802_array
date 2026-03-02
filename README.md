@@ -30,13 +30,8 @@
 **remember to match serial numbers with initial Rx/Tx Rohith scripts, ADF5356 setting for LO
 
 1) pins 6, 7 to HIGH, disconnect PMOD pins (10, 14, 18), disconnect high-linearity and H-pol enable (16, 22)
-2) verify .ino
-3) cd Downloads
-4) echo 'KERNEL=="ttyACM*", MODE="0666"' | sudo tee /etc/udev/rules.d/99-arduino.rules
-5) echo 'KERNEL=="ttyUSB*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/99-arduino.rules
-6) sudo udevadm control --reload-rules && sudo udevadm trigger
-7) upload .ino
-8) run matlab script (load LUTs)
+2) open arduino ide, verify/upload .ino
+8) open matlab, from folder option (not add to PATH), run matlab script (load LUTs)
 9) pins 6 & 7 to LOW, connect PMOD pins (10, 14, 18), high-linearity and H-pol enable to HIGH (16, 22)
    
 10) run overlay (jupyter notebook)
