@@ -27,6 +27,8 @@
 * Pin 25
 * Pin 26   GROUND
 
+**remember to match serial numbers with initial Rx/Tx Rohith scripts, ADF5356 setting for LO
+
 1) pins 6, 7 to HIGH, disconnect PMOD pins (10, 14, 18), disconnect high-linearity and H-pol enable (16, 22)
 2) verify .ino
 3) cd Downloads
