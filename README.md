@@ -27,12 +27,13 @@
 * Pin 25
 * Pin 26   GROUND
 
-1) verify .ino
-2) cd Downloads
-3) echo 'KERNEL=="ttyACM*", MODE="0666"' | sudo tee /etc/udev/rules.d/99-arduino.rules
-4) echo 'KERNEL=="ttyUSB*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/99-arduino.rules
-5) sudo udevadm control --reload-rules && sudo udevadm trigger
-6) upload .ino
+1) pins 6 & 7 to HIGH
+2) verify .ino
+3) cd Downloads
+4) echo 'KERNEL=="ttyACM*", MODE="0666"' | sudo tee /etc/udev/rules.d/99-arduino.rules
+5) echo 'KERNEL=="ttyUSB*", MODE="0666"' | sudo tee -a /etc/udev/rules.d/99-arduino.rules
+6) sudo udevadm control --reload-rules && sudo udevadm trigger
+7) upload .ino
 8) run matlab script (load LUTs)
 9) pins 6 & 7 to LOW
    
