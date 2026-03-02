@@ -5,29 +5,29 @@
 * Pin 3    GROUND
 * Pin 4
 * Pin 5    GROUND
-* Pin 6    HIGH -> LOW
-* Pin 7    HIGH -> LOW
+* Pin 6    *HIGH -> LOW
+* Pin 7    *HIGH -> LOW
 * Pin 8    GROUND
 * Pin 9    GROUND
-* Pin 10   PMOD 0
+* Pin 10   *PMOD 0
 * Pin 11   GROUND
 * Pin 12   
 * Pin 13   GROUND
-* Pin 14   PMOD 1
+* Pin 14   *PMOD 1
 * Pin 15   GROUND
-* Pin 16
+* Pin 16   *HIGH
 * Pin 17   HIGH -- chip-select pin for SPI communication for both UDC chips
-* Pin 18   PMOD 2
+* Pin 18   *PMOD 2
 * Pin 19   HIGH (for TX, low for RX)
 * Pin 20   
 * Pin 21   LOW
-* Pin 22   HIGH (enable H-pol channels)
+* Pin 22   *HIGH (enable H-pol channels)
 * Pin 23
 * Pin 24   GROUND
 * Pin 25
 * Pin 26   GROUND
 
-1) pins 6 & 7 to HIGH
+1) pins 6, 7 to HIGH, disconnect PMOD pins (10, 14, 18), disconnect high-linearity and H-pol enable (16, 22)
 2) verify .ino
 3) cd Downloads
 4) echo 'KERNEL=="ttyACM*", MODE="0666"' | sudo tee /etc/udev/rules.d/99-arduino.rules
@@ -35,7 +35,7 @@
 6) sudo udevadm control --reload-rules && sudo udevadm trigger
 7) upload .ino
 8) run matlab script (load LUTs)
-9) pins 6 & 7 to LOW
+9) pins 6 & 7 to LOW, connect PMOD pins (10, 14, 18), high-linearity and H-pol enable to HIGH (16, 22)
    
 10) run overlay (jupyter notebook)
 11) program device (vivado)
