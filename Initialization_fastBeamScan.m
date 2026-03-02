@@ -4,12 +4,12 @@ clc;
 addpath('Array Functions F5288v200'); 
 addpath('Foundamental Functions F5288v200'); 
 addpath('Foundamental Functions F5728 UDC'); 
-addpath(genpath('chip_lvl_ctrl'))
+addpath(genpath('chip_lev_ctrl'))
 addpath(genpath('array_lev_ctrl'))
 addpath('/home/wcsng-27/Downloads/mmwave_tb-20d0dc0de1bc32c1ac046c974f2902eafbd55713/hw_ctrl_src/extreme_waves_PAs/arduino_masterControl/matlab_source/uart2spi_lib/'); 
 
-% Verify this is the correct port for the FTDI/Arduino
-obj = SPIasUART('/dev/ttyUSB1', 115200);
+% port for Arduino on phased array
+obj = SPIasUART('/dev/ttyACM1', 115200);
 
 obj.setPinHigh(2);
 obj.setPinLow(2);
