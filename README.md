@@ -1,5 +1,5 @@
 # g2802_array
-
+```
 * Pin 1                   GROUND
 * Pin 2
 * Pin 3                   GROUND
@@ -26,7 +26,7 @@
 * Pin 24                  GROUND
 * Pin 25
 * Pin 26                  GROUND
-
+```
 **remember to match serial numbers with initial Rx/Tx Rohith scripts, ADF5356 setting for LO
 
 1) pins 6, 7 to HIGH, disconnect PMOD pins (10, 14, 18), disconnect high-linearity and H-pol enable (16, 22)
