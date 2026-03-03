@@ -1,20 +1,20 @@
 # g2802_array
 
-* Pin 1    GROUND
+* Pin 1                   GROUND
 * Pin 2
-* Pin 3    GROUND
+* Pin 3                   GROUND
 * Pin 4
-* Pin 5    GROUND
+* Pin 5                   GROUND
 * Pin 6    *HIGH -> LOW
 * Pin 7    *HIGH -> LOW
-* Pin 8    GROUND
-* Pin 9    GROUND
+* Pin 8                   GROUND
+* Pin 9                   GROUND
 * Pin 10   *PMOD 0
-* Pin 11   GROUND
+* Pin 11                  GROUND
 * Pin 12   
-* Pin 13   GROUND
+* Pin 13                  GROUND
 * Pin 14   *PMOD 1
-* Pin 15   GROUND
+* Pin 15                  GROUND
 * Pin 16   *HIGH
 * Pin 17   HIGH -- chip-select pin for SPI communication for both UDC chips
 * Pin 18   *PMOD 2
@@ -23,9 +23,9 @@
 * Pin 21   LOW
 * Pin 22   *HIGH (enable H-pol channels)
 * Pin 23
-* Pin 24   GROUND
+* Pin 24                  GROUND
 * Pin 25
-* Pin 26   GROUND
+* Pin 26                  GROUND
 
 **remember to match serial numbers with initial Rx/Tx Rohith scripts, ADF5356 setting for LO
 
