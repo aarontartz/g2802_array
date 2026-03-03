@@ -27,8 +27,8 @@
 * Pin 25
 * Pin 26                  GROUND
 ```
-**remember to match serial numbers with initial Rx/Tx Rohith scripts, ADF5356 setting for LO
-**connecting to dedicated GND terminal of adapter is enough, confirmed with continuity test
+* remember to match serial numbers with initial Rx/Tx Rohith scripts, ADF5356 setting for LO
+* connecting to dedicated GND terminal of adapter is enough, confirmed with continuity test
 
 1) pins 6, 7 to HIGH, disconnect PMOD pins (10, 14, 18), disconnect high-linearity and H-pol/V-pol enable (16, 22, 23)
 2) open arduino ide, verify/upload .ino
